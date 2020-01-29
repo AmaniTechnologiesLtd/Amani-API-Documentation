@@ -16,7 +16,7 @@
 <li>Uploading document</li>
 <li>Querying customer data and results</li>
 </ul>
-<p>You should follow authorization mechanics in all of your requests except login provides a token for you.</p>
+<p>You should follow authorization mechanics in all of your requests except the login will provide a token for you.</p>
 <h2 id="auth">Auth</h2>
 <p>Amani API uses JWT Auth in multiple layers. You basically get a token and use it till its expiration.</p>
 <p>You should obtain your token by using the request below:</p>
@@ -50,20 +50,20 @@
 <span class="token header-name keyword">Authorization:</span> Token YOUR.JWT.TOKEN<span class="token application/json">
 
 <span class="token punctuation">{</span>
-	<span class="token string">"id_card_number"</span><span class="token punctuation">:</span> <span class="token string">"24536067306"</span><span class="token punctuation">,</span>
-	<span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"asd"</span><span class="token punctuation">,</span>
-	<span class="token string">"email"</span><span class="token punctuation">:</span> <span class="token string">"qwe@qwe.com"</span><span class="token punctuation">,</span>
-	<span class="token string">"phone"</span><span class="token punctuation">:</span> <span class="token string">"+123"</span>
+	<span class="token string">"id_card_number"</span><span class="token punctuation">:</span> <span class="token string">"12345678912"</span><span class="token punctuation">,</span>
+	<span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"Example Name"</span><span class="token punctuation">,</span>
+	<span class="token string">"email"</span><span class="token punctuation">:</span> <span class="token string">"example@email.com"</span><span class="token punctuation">,</span>
+	<span class="token string">"phone"</span><span class="token punctuation">:</span> <span class="token string">"+90 123 123 12 12"</span>
 <span class="token punctuation">}</span>
 </span></code></pre>
 <p>You should get a response like below:</p>
 <pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
     <span class="token string">"id"</span><span class="token punctuation">:</span> <span class="token number">465</span><span class="token punctuation">,</span>
-    <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"nejdet"</span><span class="token punctuation">,</span>
-    <span class="token string">"phone"</span><span class="token punctuation">:</span> <span class="token string">"+123"</span><span class="token punctuation">,</span>
-    <span class="token string">"email"</span><span class="token punctuation">:</span> <span class="token string">"qwe@qwe.com"</span><span class="token punctuation">,</span>
+    <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"Example Name"</span><span class="token punctuation">,</span>
+    <span class="token string">"phone"</span><span class="token punctuation">:</span> <span class="token string">"+90 123 123 12 12"</span><span class="token punctuation">,</span>
+    <span class="token string">"email"</span><span class="token punctuation">:</span> <span class="token string">"example@email.com"</span><span class="token punctuation">,</span>
     <span class="token string">"token"</span><span class="token punctuation">:</span> <span class="token string">"CUSTOMER_TOKEN (DEPRECATED)"</span><span class="token punctuation">,</span>
-    <span class="token string">"id_card_number"</span><span class="token punctuation">:</span> <span class="token string">"12345678901"</span>
+    <span class="token string">"id_card_number"</span><span class="token punctuation">:</span> <span class="token string">"12345678912"</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <p>After this point, you’ll be able to upload documents for that customer.</p>
@@ -87,7 +87,7 @@ files[]: data:image/jpeg;base64,IMAGEDATA1
 <span class="token punctuation">}</span>
 </code></pre>
 <p>This response informs you about the uploaded document. If the document is not classified you’ll see <code>"XX"</code> instead of <code>"ID"</code><br>
-Responses different than this format means an issue. Please contact us so we can investigate.</p>
+If you see a different response, there is an issue. Please contact us so we can investigate.</p>
 </div>
 </body>
 
