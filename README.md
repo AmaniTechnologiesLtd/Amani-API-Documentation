@@ -69,7 +69,7 @@
 <p>After this point, you’ll be able to upload documents for that customer.</p>
 <h2 id="uploading-a-document">Uploading a Document</h2>
 <p>Because you’ll send a file via this request, content type changes to <code>multipart/form-data</code>.  Please follow the request below:</p>
-<pre class=" language-http"><code class="prism  language-http"><span class="token header-name keyword">HOST:</span> https://tr.amani.ai/api/v1/customer/
+<pre class=" language-http"><code class="prism  language-http"><span class="token header-name keyword">HOST:</span> https://tr.amani.ai/api/v1/recognition/web/upload
 <span class="token header-name keyword">Method:</span> POST
 <span class="token header-name keyword">Content-Type:</span> multipart/form-data; boundary=----someboundary
 <span class="token header-name keyword">Authorization:</span> Token YOUR.JWT.TOKEN
