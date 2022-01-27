@@ -62,7 +62,7 @@
     <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"Example Name"</span><span class="token punctuation">,</span>
     <span class="token string">"phone"</span><span class="token punctuation">:</span> <span class="token string">"+90 123 123 12 12"</span><span class="token punctuation">,</span>
     <span class="token string">"email"</span><span class="token punctuation">:</span> <span class="token string">"example@email.com"</span><span class="token punctuation">,</span>
-    <span class="token string">"token"</span><span class="token punctuation">:</span> <span class="token string">"CUSTOMER_TOKEN (DEPRECATED)"</span><span class="token punctuation">,</span>
+    <span class="token string">"token"</span><span class="token punctuation">:</span> <span class="token string">"CUSTOMER_TOKEN"</span><span class="token punctuation">,</span>
     <span class="token string">"id_card_number"</span><span class="token punctuation">:</span> <span class="token string">"12345678912"</span>
 <span class="token punctuation">}</span>
 </code></pre>
